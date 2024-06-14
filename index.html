@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Geometry Calculator</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Tabung</h2>
+            <label for="radiusTabung">Jari-jari (r):</label>
+            <input type="number" id="radiusTabung" required>
+            <label for="heightTabung">Tinggi (h):</label>
+            <input type="number" id="heightTabung" required>
+            <button onclick="calculateTabung()">Hitung</button>
+            <p id="resultTabung"></p>
+        </section>
+        
+        <section>
+            <h2>Bola</h2>
+            <label for="radiusBola">Jari-jari (r):</label>
+            <input type="number" id="radiusBola" required>
+            <button onclick="calculateBola()">Hitung</button>
+            <p id="resultBola"></p>
+        </section>
+        
+        <section>
+            <h2>Limas Segi Empat</h2>
+            <label for="baseLimas">Sisi Alas (s):</label>
+            <input type="number" id="baseLimas" required>
+            <label for="heightLimas">Tinggi (h):</label>
+            <input type="number" id="heightLimas" required>
+            <button onclick="calculateLimas()">Hitung</button>
+            <p id="resultLimas"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Geometry Calculator</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
